@@ -60,7 +60,7 @@ footer > a { font-size:16px; letter-spacing:.02em; }
   .site-header { width:calc(100% - 32px); padding-top:20px; }
   .brand,.brand img { width:52px; height:52px; }
   .header-socials { gap:16px; }
-  .header-socials svg { width:19px; height:19px; }
+  .header-socials svg { width:23px; height:23px; }
   .title-panel { width:calc(100% - 32px); padding-top:28px; }
   .title-panel h1 { font-size:clamp(39px,10.3vw,62px); letter-spacing:.07em; }
   .ship { top:9px; right:0; width:112px; opacity:.68; }
@@ -74,10 +74,13 @@ footer > a { font-size:16px; letter-spacing:.02em; }
   .status,.follow h2 { font-size:14px; }
   .social-list { gap:16px 24px; }
   .social-list a { padding:0; }
+  .social-list svg { width:26px; height:26px; flex-basis:26px; }
   .social-list span { display:none; }
 }
 @media (max-width:480px) {
-  .header-socials { gap:13px; }
+  .header-socials { gap:14px; }
+  .header-socials svg { width:24px; height:24px; }
+  .social-list svg { width:28px; height:28px; flex-basis:28px; }
   .ship { right:-4px; width:86px; }
   .title-panel { padding-bottom:22px; }
   .title-panel h1 { font-size:37px; }
