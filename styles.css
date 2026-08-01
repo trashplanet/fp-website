@@ -63,7 +63,7 @@ footer > a { font-size:16px; letter-spacing:.02em; }
   .header-socials svg { width:23px; height:23px; }
   .title-panel { z-index:1; width:calc(100% - 32px); padding-top:28px; }
   .title-panel h1 { font-size:clamp(39px,10.3vw,62px); letter-spacing:.07em; }
-  .ship { top:auto; right:12px; bottom:-42px; width:112px; opacity:.78; transform:rotate(8deg); }
+  .ship { top:auto; right:clamp(40px,8vw,72px); bottom:-42px; width:112px; opacity:.78; transform:rotate(8deg); }
   .ornament { margin:22px 0 18px; }
   .ornament:not(.small) span { width:min(120px,27vw); }
   .series-label { font-size:clamp(12px,3vw,17px); letter-spacing:.24em; }
@@ -81,7 +81,7 @@ footer > a { font-size:16px; letter-spacing:.02em; }
   .header-socials { gap:14px; }
   .header-socials svg { width:24px; height:24px; }
   .social-list svg { width:28px; height:28px; flex-basis:28px; }
-  .ship { right:4px; bottom:-20px; width:86px; }
+  .ship { right:4px; bottom:-26px; width:86px; }
   .title-panel { padding-bottom:22px; }
   .title-panel h1 { font-size:37px; }
   .series-label { margin-bottom:17px; font-size:11px; }
