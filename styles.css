@@ -13,7 +13,7 @@ a:hover { color:#a83574; }
 .header-socials .accent { color:var(--pink); }
 .header-socials svg { width:21px; height:21px; }
 .title-panel { position:relative; width:min(1040px,calc(100% - 48px)); margin:0 auto; padding:34px 0 26px; text-align:center; }
-.ship { position:absolute; z-index:0; top:6px; right:0; width:178px; opacity:.85; transform:rotate(10deg); pointer-events:none; }
+.ship { position:absolute; z-index:0; top:6px; right:0; width:178px; opacity:.85; transform:rotate(10deg); filter:sepia(58%) saturate(235%) hue-rotate(285deg) brightness(104%) contrast(96%) drop-shadow(0 5px 9px rgba(150,41,108,.2)); pointer-events:none; }
 .title-panel h1 { position:relative; z-index:1; margin:0; color:var(--ink); font-family:Michroma,sans-serif; font-size:78px; font-weight:400; letter-spacing:.1em; line-height:1.2; text-transform:uppercase; }
 .ornament { display:flex; align-items:center; justify-content:center; gap:12px; margin:26px 0 20px; }
 .ornament span { width:210px; height:1px; background:var(--pink); opacity:.55; }
