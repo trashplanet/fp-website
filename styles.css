@@ -68,7 +68,7 @@ footer > a { font-size:16px; letter-spacing:.02em; }
   .ornament:not(.small) span { width:min(120px,27vw); }
   .series-label { font-size:clamp(12px,3vw,17px); letter-spacing:.24em; }
   .tagline { font-size:clamp(18px,4.5vw,23px); }
-  .hero-band { height:520px; padding:48px 18px 38px; }
+  .hero-band { height:440px; padding:42px 18px 32px; }
   .coming-soon h2 { font-size:15px; letter-spacing:.28em; }
   .about > p:not(.status) { font-size:17px; }
   .status,.follow h2 { font-size:14px; }
@@ -86,7 +86,7 @@ footer > a { font-size:16px; letter-spacing:.02em; }
   .title-panel h1 { font-size:37px; }
   .series-label { margin-bottom:17px; font-size:11px; }
   .tagline { font-size:17px; }
-  .hero-band { height:470px; padding-top:42px; }
+  .hero-band { height:390px; padding-top:32px; background-size:auto 430px; background-position:center bottom; }
   .form-row { display:grid; }
   .signup button { height:54px; }
   .about { padding-top:48px; }
