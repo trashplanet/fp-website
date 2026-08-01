@@ -15,7 +15,7 @@ a:hover { color:#a83574; }
 .title-panel { position:relative; width:min(1040px,calc(100% - 48px)); margin:0 auto; padding:34px 0 26px; text-align:center; }
 .ship { position:absolute; z-index:0; top:6px; right:0; width:178px; opacity:.85; transform:rotate(10deg); line-height:0; pointer-events:none; }
 .ship img { display:block; width:100%; height:auto; }
-.ship::after { content:""; position:absolute; inset:0; background:linear-gradient(135deg,#2f174f 12%,#61307e 52%,#b83d83 88%); -webkit-mask:url("assets/ship.png") center / contain no-repeat; mask:url("assets/ship.png") center / contain no-repeat; clip-path:polygon(12% 0,100% 0,100% 100%,28% 100%,28% 82%,14% 72%); mix-blend-mode:color; opacity:1; }
+.ship::after { content:""; position:absolute; inset:0; background:linear-gradient(135deg,#713b89 12%,#a34791 55%,#d768a4 88%); -webkit-mask:url("assets/ship.png") center / contain no-repeat; mask:url("assets/ship.png") center / contain no-repeat; clip-path:polygon(12% 0,100% 0,100% 100%,28% 100%,28% 82%,14% 72%); mix-blend-mode:multiply; opacity:.3; }
 .title-panel h1 { position:relative; z-index:1; margin:0; color:var(--ink); font-family:Michroma,sans-serif; font-size:78px; font-weight:400; letter-spacing:.1em; line-height:1.2; text-transform:uppercase; }
 .ornament { display:flex; align-items:center; justify-content:center; gap:12px; margin:26px 0 20px; }
 .ornament span { width:210px; height:1px; background:var(--pink); opacity:.55; }
