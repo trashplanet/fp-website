@@ -99,7 +99,7 @@ footer > a { font-size:16px; letter-spacing:.02em; }
   .title-panel h1 { font-size:37px; }
   .series-label { margin-bottom:17px; font-size:11px; }
   .tagline { font-size:17px; }
-  .hero-band { height:390px; padding-top:32px; background-size:auto 430px; background-position:center bottom; }
+  .hero-band { height:clamp(330px,92vw,360px); padding-top:32px; background-size:auto 430px; background-position:center bottom; }
   .form-row { display:grid; }
   .signup button { height:54px; }
   .about { padding-top:48px; }
