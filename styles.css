@@ -13,7 +13,7 @@ a:hover { color:#a83574; }
 .header-socials .accent { color:var(--pink); }
 .header-socials svg { width:21px; height:21px; }
 .title-panel { position:relative; width:min(1040px,calc(100% - 48px)); margin:0 auto; padding:34px 0 26px; text-align:center; }
-.ship { position:absolute; z-index:0; top:6px; right:0; width:178px; opacity:.85; transform:rotate(10deg); line-height:0; pointer-events:none; }
+.ship { position:absolute; z-index:0; top:6px; right:0; width:178px; opacity:.85; transform:rotate(10deg); animation:ship-arrive 1.45s cubic-bezier(.22,.8,.3,1) .15s both; line-height:0; pointer-events:none; will-change:transform,opacity; }
 .ship img { display:block; width:100%; height:auto; }
 .ship::after { content:""; position:absolute; inset:0; background:linear-gradient(135deg,#713b89 12%,#a34791 55%,#d768a4 88%); -webkit-mask-image:linear-gradient(45deg,transparent 0%,transparent 20%,rgba(0,0,0,.18) 31%,rgba(0,0,0,.58) 42%,#000 54%),url("assets/ship.png"); -webkit-mask-position:center,center; -webkit-mask-size:100% 100%,contain; -webkit-mask-repeat:no-repeat; -webkit-mask-composite:source-in; mask-image:linear-gradient(45deg,transparent 0%,transparent 20%,rgba(0,0,0,.18) 31%,rgba(0,0,0,.58) 42%,#000 54%),url("assets/ship.png"); mask-position:center,center; mask-size:100% 100%,contain; mask-repeat:no-repeat; mask-composite:intersect; mix-blend-mode:multiply; opacity:.3; }
 .title-panel h1 { position:relative; z-index:1; margin:0; color:var(--ink); font-family:Michroma,sans-serif; font-size:78px; font-weight:400; letter-spacing:.1em; line-height:1.2; text-transform:uppercase; }
@@ -58,6 +58,7 @@ footer p { margin:0 0 6px; color:#2a2030; font-size:16px; }
 footer > a { font-size:16px; letter-spacing:.02em; }
 .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 @keyframes fp-float { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-6px); } }
+@keyframes ship-arrive { 0% { opacity:.25; transform:translate(-58px,24px) rotate(7deg) scale(.97); } 72% { opacity:.85; transform:translate(3px,-1px) rotate(10.4deg) scale(1); } 100% { opacity:.85; transform:translate(0,0) rotate(10deg) scale(1); } }
 @media (max-width:900px) {
   .ship { display:none; }
   .site-header { width:calc(100% - 32px); padding-top:20px; }
@@ -96,4 +97,4 @@ footer > a { font-size:16px; letter-spacing:.02em; }
   .about h2 { font-size:15px; }
   .status { line-height:1.7; }
 }
-@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .coming-soon { animation:none; } }
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .coming-soon,.ship { animation:none; } }
